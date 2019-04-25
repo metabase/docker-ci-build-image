@@ -2,7 +2,8 @@ FROM circleci/clojure:lein-2.8.1-node-browsers
 
 MAINTAINER Cam Saul <cam@metabase.com>
 
-RUN sudo apt-get install gettext -y
-RUN sudo apt-get install awscli -y
+RUN sudo apt-get update
 
-CMD ["/bin/sh"]
+RUN sudo apt-get install gettext awscli python-pip -y
+
+RUN pip install awsebcli --upgrade --user
