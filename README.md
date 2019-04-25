@@ -1,17 +1,17 @@
 ### Build It
 
 ```bash
-docker build -t metabase/ci-build:lein-2.8.1 .
+docker build -t metabase/ci-build:latest .
 ```
 
 ### Test It
 
 ```bash
-docker run -it metabase/ci-build:lein-2.8.1
+docker run -it metabase/ci-build:latest
 ```
 
 ### Push It
 
 ```bash
-docker push metabase/ci-build:lein-2.8.1
+docker push metabase/ci-build:latest
 ```

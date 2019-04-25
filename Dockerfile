@@ -7,3 +7,5 @@ RUN sudo apt-get update
 RUN sudo apt-get install gettext awscli python-pip -y
 
 RUN pip install awsebcli --upgrade --user
+
+ENV PATH="/home/circleci/.local/bin:${PATH}"
